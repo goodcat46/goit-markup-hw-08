@@ -1,0 +1,119 @@
+// /* ---------------------------ШАПКА СТОРІНКИ */
+
+// /* НАВІГАЦІЯ САЙТОМ */
+.nav-panel {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: auto;
+    .nav-list {
+      display: flex;
+
+      font-weight: var(--text-wght-nrml2);
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      & li {
+        & + li {
+          margin-left: 50px;
+        }
+      }
+      & .nav-link {
+        display: block;
+        color: var(--tittle-clr-bold);
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        transition: color 250ms var(--anim-main-timing-function);
+        &:focus,
+        &:hover {
+          color: var(--accent-clr-elmnts);
+        }
+        &:active {
+          color: var(--accent-clr-elmnts);
+        }
+        &.current {
+          position: relative;
+          display: block;
+
+          color: var(--accent-clr-elmnts);
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: -1px;
+            left: 0;
+
+            height: 4px;
+            width: 100%;
+            border-radius: 8px;
+            background-color: var(--accent-clr-elmnts);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* КОНТАКТИ ШАПКА */
+.contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    font-weight: var(--text-wght-nrml2);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    & .mail-hdr,
+    & .tel-hdr {
+      display: flex;
+      align-items: center;
+
+      color: var(--color-text-primary);
+
+      transition: color var(--anim-main-timing-function), fill var(--anim-main-timing-function);
+
+      & .icon-mail {
+        width: 16px;
+        height: 12px;
+
+        margin-right: 10px;
+
+        fill: currentColor;
+      }
+      & .icon-tel {
+        width: 10px;
+        height: 16px;
+
+        margin-right: 10px;
+
+        fill: currentColor;
+      }
+    }
+    & .mail-hdr:focus,
+    & .mail-hdr:hover,
+    & .mail-hdr:active,
+    & .tel-hdr:focus,
+    & .tel-hdr:hover,
+    & .tel-hdr:active {
+      color: var(--accent-clr-elmnts);
+      fill: var(--accent-clr-elmnts);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    & .mail-hdr,
+    & .tel-hdr {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    & li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}

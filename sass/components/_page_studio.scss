@@ -1,0 +1,246 @@
+// /* ----------ГЕРОЙ */
+// .hero {
+//   background-color: #c4c4c4;
+//   height: 600px;
+//   max-width: 1600px;
+//   width: 100%;
+
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/Img_hero.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   text-align: center;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   /* ТЕКСТ ГЕРОЙ */
+//   &-hero {
+//     font-weight: var(--tittle-wght-bol2);
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+
+//     width: 605px;
+
+//     margin: 0px auto 28px;
+//   }
+// }
+// /* ----------ОСОБЛИВОСТІ */
+// .spcls-list {
+//   display: flex;
+
+//   & > li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   /* ІКОНКИ В ОСОБЛИВОСТЯХ */
+//   &-item::before {
+//     display: block;
+//     content: '';
+//     height: 120px;
+//     background-color: #f5f4fa;
+//     background-size: 70px 70px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     border-radius: 4px;
+
+//     margin-bottom: 30px;
+//   }
+//   &-container {
+//     width: 270px;
+//   }
+//   &-tittles {
+//     font-weight: var(--tittle-wght-bold);
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     color: var(--tittle-clr-bold);
+//     margin-top: 0px;
+//     margin-bottom: 10px;
+//   }
+//   &-text {
+//     line-height: 1.7;
+//     margin: 0px;
+//   }
+// }
+// .icon {
+//   &-antena::before {
+//     background-image: url(../icons/icons-studio/icons-specials/antenna.svg);
+//   }
+//   &-clock::before {
+//     background-image: url(../icons/icons-studio/icons-specials/clock.svg);
+//   }
+//   &-diagram::before {
+//     background-image: url(../icons/icons-studio/icons-specials/diagram.svg);
+//   }
+//   &-astronaut::before {
+//     background-image: url(../icons/icons-studio/icons-specials/astronaut.svg);
+//   }
+// }
+
+// /* ---------- works list */
+// .works-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   & > li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   &-item {
+//     position: relative;
+//   }
+//   &-img {
+//     width: 370px;
+//   }
+//   &-text {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     overflow: hidden;
+
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+
+//     width: 100%;
+//     height: 19%;
+
+//     margin: 0;
+
+//     text-transform: uppercase;
+//     white-space: nowrap;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     color: #ffffff;
+
+//     background-color: rgba(47, 48, 58, 0.8);
+//   }
+// }
+// /* ----------НАША КОМАНДА */
+// .team-bckgrnd-clr {
+//   background-color: #f5f4fa;
+// }
+// .wrkr-cards-list {
+//   display: flex;
+//   gap: 30px;
+// }
+// /* КАРТА ПРАЦІВНИКА */
+// .wrkr-card {
+//   background-color: #fff;
+
+//   width: 270px;
+//   padding-bottom: 30px;
+//   border-radius: 0px 0px 4px 4px;
+
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+//   & img {
+//     padding-bottom: 30px;
+//   }
+//   & .wrkr-name {
+//     font-weight: var(--text-wght-nrml2);
+//     font-size: 16px;
+//     line-height: 1.2;
+//     text-align: center;
+//     color: var(--tittle-clr-bold);
+
+//     margin: 0px;
+//     padding-top: 0px;
+//     padding-bottom: 10px;
+//   }
+//   & .wrkr-position {
+//     font-size: 16px;
+//     line-height: 1.2;
+//     text-align: center;
+//     color: var(--color-text-primary);
+
+//     margin: 0px;
+//     padding-bottom: 16px;
+//   }
+// }
+// /* СОЦІАЛЬНІ МЕРЕЖІ ПРАЦІВНИКІВ */
+// .crd-socials-list {
+//   display: flex;
+//   column-gap: 10px;
+//   align-items: center;
+
+//   width: 206px;
+
+//   margin-left: auto;
+//   margin-right: auto;
+//   &-link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     // content: "";
+
+//     width: 44px;
+//     height: 44px;
+
+//     fill: var(--fill-icon-svg);
+//     background-color: #ffffff;
+//     border-radius: 50%;
+
+//     transition: background-color var(--anim-main-timing-function),
+//       fill var(--anim-main-timing-function);
+
+//     &:focus,
+//     &:hover {
+//       background-color: var(--clr-btns-accent);
+//       fill: #ffffff;
+//     }
+//     & svg {
+//       display: block;
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+// }
+// /* ----------ПОСТІЙНІ КЛІЄНТИ */
+// .partner-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+
+//   gap: 30px;
+
+//   width: 100%;
+//   & .partner-link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     min-width: 170px;
+//     height: 92px;
+
+//     // fill: currentColor;
+//     fill: var(--fill-icon-svg);
+
+//     border: 1px solid var(--icons-clr-primary);
+//     border-radius: 4px;
+
+//     transition: border-color var(--anim-main-timing-function), fill var(--anim-main-timing-function);
+//     &:focus,
+//     &:hover {
+//       border-color: var(--accent-clr-elmnts);
+//       fill: var(--accent-clr-elmnts);
+//     }
+//     & .icon-partner {
+//       width: 106px;
+//       height: 60px;
+
+//       flex-basis: 160px;
+//       flex-grow: 5;
+//     }
+//   }
+// }

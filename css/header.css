@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* ---------------------------ШАПКА СТОРІНКИ */
+/* НАВІГАЦІЯ САЙТОМ */
+.nav-zone {
+  margin-right: auto;
+}
+
+.nav-list {
+  font-weight: var(--text-wght-nrml2);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list li + li {
+  margin-left: 50px;
+}
+.nav-list .nav-link {
+  display: block;
+  color: var(--tittle-clr-bold);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms var(--anim-main-timing-function);
+}
+.nav-list .nav-link:focus, .nav-list .nav-link:hover {
+  color: var(--accent-clr-elmnts);
+}
+.nav-list .nav-link:active {
+  color: var(--accent-clr-elmnts);
+}
+.nav-list .nav-link.current {
+  position: relative;
+  display: block;
+  color: var(--accent-clr-elmnts);
+}
+.nav-list .nav-link.current::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--accent-clr-elmnts);
+}
+
+/* КОНТАКТИ ШАПКА */
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--text-wght-nrml2);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts li:not(:first-child) {
+  margin-left: 50px;
+}
+.contacts .mail-hdr, .contacts .tel-hdr {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-primary);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--anim-main-timing-function), fill var(--anim-main-timing-function);
+}
+.contacts .mail-hdr .icon-mail, .contacts .tel-hdr .icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts .mail-hdr .icon-tel, .contacts .tel-hdr .icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts .mail-hdr:focus, .contacts .mail-hdr:hover, .contacts .mail-hdr:active, .contacts .tel-hdr:focus, .contacts .tel-hdr:hover, .contacts .tel-hdr:active {
+  color: var(--accent-clr-elmnts);
+  fill: var(--accent-clr-elmnts);
+}/*# sourceMappingURL=header.css.map */

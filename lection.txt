@@ -1,0 +1,84 @@
+Oleksii Repin
+  1:39 PM
+  Посилання на репозиторій:
+  https://github.com/Olexiy-repin/bootcamp_28_on_HTML_CSS/tree/module-01-practice
+  Перевірка вкладеності:
+  https://caninclude.glitch.me/
+  Специфікація:
+  https://html.spec.whatwg.org/
+  Посилання на макет barbershop:
+  https://www.figma.com/file/PpjY9KNhWLyRrKwDGAaEz1/Barbershop_v1-(Copy)-(Copy)-(Copy)
+  Шпора по emmet:
+  https://docs.emmet.io/cheat-sheet/
+  Обідня перерва до 14:30 (edited) 
+
+    Viktoriia Shynkar
+    4:31 PM
+  @channel Друзі, запис лекційної частини уже є в доступі у форматі Zoom :bird::speech_balloon:
+  [BCOn28] [лекція] Модуль 1. Основи HTML (25.07) https://us06web.zoom.us/rec/play/xDwJmZuoE3ch2mMwNl_vfvm6jV0lRk2OfNG1T0prgh1N3KOIycpeA6SjPqMBHGjOzpiLunmqOo1AyIaO.yNb85INDcOfEeZK0?startTime=1658730541000&_x_zm_rtaid=TJFUKrLBSIa88RyJAvnTAw.1659096312736.c54511c51df1b1122882b98b104dc6ce&_x_zm_rhtaid=413
+
+
+
+
+
+
+
+
+Oleksii Repin
+  1:30 PM
+Посилання на репозиторій:
+https://github.com/Olexiy-repin/bootcamp_28_on_HTML_CSS/tree/module-04-practice
+Обідня перерва до 14:30
+
+скрол бімп
+--removed-body-scroll-bar-size: 0px;
+
+.style_overflowH__3BzCE>.style_scrollbar__2aVzU {
+    flex: 1 1 auto;
+    width: 1px;
+    overflow: scroll
+}
+
+.style_overflowH__3BzCE.style_outside__2GBoj {
+    margin-bottom: -14px
+}
+
+.style_overflowH__3BzCE.style_outside__2GBoj>.style_scrollbar__2aVzU {
+    overflow: scroll;
+    overflow-y: hidden;
+    padding-bottom: 4px
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar-corner {
+    background: transparent
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar-track {
+    border-radius: 6px;
+    margin-top: 0;
+    margin-top: var(--scrollbar-top-offset,0);
+    margin-bottom: 0;
+    margin-bottom: var(--scrollbar-bottom-offset,0);
+    border: 2px solid transparent;
+    -webkit-transition: margin 1s ease-in-out;
+    transition: margin 1s ease-in-out
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 0 3px #cfd2d6
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 3px #9ea6ad;
+    border: 2px solid transparent
+}
+
+.style_scrollbar__2aVzU::-webkit-scrollbar-thumb:hover {
+    border-color: #9ea6ad
+}
