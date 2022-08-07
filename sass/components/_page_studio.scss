@@ -47,100 +47,112 @@
     }
   }
 }
-// /* ----------ОСОБЛИВОСТІ */
-// .spcls-list {
-//   display: flex;
+/* ----------ОСОБЛИВОСТІ */
+.specials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
-//   & > li:not(:last-child) {
-//     margin-right: 30px;
-//   }
-//   /* ІКОНКИ В ОСОБЛИВОСТЯХ */
-//   &-item::before {
-//     display: block;
-//     content: '';
-//     height: 120px;
-//     background-color: #f5f4fa;
-//     background-size: 70px 70px;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     border-radius: 4px;
+  &__item {
+    display: block;
+    width: 100%;
+    &::before {
+      display: block;
+      content: '';
+      height: 120px;
+      width: 100%;
+      background-color: #f5f4fa;
+      background-size: 70px 70px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 4px;
 
-//     margin-bottom: 30px;
-//   }
-//   &-container {
-//     width: 270px;
-//   }
-//   &-tittles {
-//     font-weight: var(--tittle-wght-bold);
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     color: var(--tittle-clr-bold);
-//     margin-top: 0px;
-//     margin-bottom: 10px;
-//   }
-//   &-text {
-//     line-height: 1.7;
-//     margin: 0px;
-//   }
-// }
-// .icon {
-//   &-antena::before {
-//     background-image: url(../icons/icons-studio/icons-specials/antenna.svg);
-//   }
-//   &-clock::before {
-//     background-image: url(../icons/icons-studio/icons-specials/clock.svg);
-//   }
-//   &-diagram::before {
-//     background-image: url(../icons/icons-studio/icons-specials/diagram.svg);
-//   }
-//   &-astronaut::before {
-//     background-image: url(../icons/icons-studio/icons-specials/astronaut.svg);
-//   }
-// }
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+  &-tittles {
+    font-weight: var(--tittle-wght-bold);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--tittle-clr-bold);
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    line-height: 1.7;
+    margin: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.--icon {
+  &-antena::before {
+    background-image: url(../icons/icons-studio/icons-specials/antenna.svg);
+  }
+  &-clock::before {
+    background-image: url(../icons/icons-studio/icons-specials/clock.svg);
+  }
+  &-diagram::before {
+    background-image: url(../icons/icons-studio/icons-specials/diagram.svg);
+  }
+  &-astronaut::before {
+    background-image: url(../icons/icons-studio/icons-specials/astronaut.svg);
+  }
+}
 
-// /* ---------- works list */
-// .works-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+/* ---------- works list */
+.works-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  display: none;
 
-//   & > li:not(:last-child) {
-//     margin-right: 30px;
-//   }
-//   &-item {
-//     position: relative;
-//   }
-//   &-img {
-//     width: 370px;
-//   }
-//   &-text {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
+  &-item {
+    position: relative;
+  }
+  &-img {
+    width: 370px;
+  }
+  &-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//     overflow: hidden;
+    overflow: hidden;
 
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-//     width: 100%;
-//     height: 19%;
+    width: 100%;
+    height: 19%;
 
-//     margin: 0;
+    margin: 0;
 
-//     text-transform: uppercase;
-//     white-space: nowrap;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
 
-//     background-color: rgba(47, 48, 58, 0.8);
-//   }
-// }
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
 // /* ----------НАША КОМАНДА */
 // .team-bckgrnd-clr {
 //   background-color: #f5f4fa;

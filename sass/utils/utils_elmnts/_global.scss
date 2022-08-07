@@ -36,6 +36,11 @@ body {
   &.--no-bottom-padding {
     padding-bottom: 0px;
   }
+  &.--only-desktop {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
   &.--header {
     position: sticky;
     top: 0;
