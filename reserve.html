@@ -1,0 +1,183 @@
+<!--ПІДВАЛ СТОРІНКИ-->
+<footer class="section --footer">
+  <!-- КОНТАКТИ -->
+  <div class="container">
+    <div>
+      <!-- logo footer -->
+      <a class="logo ftr" href="./index.html">
+        <span>Web</span><span class="white">Studio</span>
+      </a>
+
+      <!-- address and contacts footer -->
+      <address>
+        <ul class="contacts-ftr">
+          <li>
+            <a
+              class="address"
+              href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              target="_blank"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li>
+            <a class="mail-ftr" href="mailto:info@devstudio.com" target="_blank"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="tel-ftr" href="tel:+380961111111" target="_blank">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <!-- СОЦ МЕРЕЖІ -->
+    <div class="socials">
+      <h2 class="socials-tittle">Приєднуйтесь</h2>
+      <ul class="socials-list">
+        <li>
+          <a class="socials-link" href="/">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-instagram-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="socials-link" href="/">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="socials-link" href="/">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="socials-link" href="/">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ФОРМА ПІДПИСКИ -->
+    <form class="form-hdr">
+      <div>
+        <label for="xxx">
+          <span class="form-hdr-tittle"> Підпишіться на розсилку </span>
+        </label>
+        <input
+          class="input-email-ftr"
+          type="email"
+          name="email_ftr"
+          id="xxx"
+          placeholder="E-mail"
+          required
+        />
+      </div>
+      <button class="btn-big-blue with-icon" type="submit">
+        <span>Підписатись</span>
+        <svg class="icon-svg">
+          <use href="./images/sprite_new.svg#icon-send"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</footer>
+
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal flex">
+    <button class="button-close" type="button" data-modal-close>
+      <svg>
+        <use href="./images/sprite_new.svg#icon-close"></use>
+      </svg>
+    </button>
+    <span class="form-name"> Залишіть свої дані, ми вам передзвонимо </span>
+    <form class="form">
+      <label>
+        <span class="form-lebel-element name"> Ім'я </span>
+        <span class="form-input-container name">
+          <input
+            class="form-input-field name"
+            type="text"
+            name="name"
+            id=""
+            placeholder=""
+            required
+          />
+          <span class="icon">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-person"></use>
+            </svg>
+          </span>
+        </span>
+      </label>
+      <label>
+        <span class="form-lebel-element phone"> Телефон </span>
+        <span class="form-input-container phone">
+          <input
+            class="form-input-field phone"
+            type="tel"
+            name="tel"
+            id=""
+            placeholder=""
+            required
+          />
+          <span class="icon">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-phone"></use>
+            </svg>
+          </span>
+        </span>
+      </label>
+      <label>
+        <span class="form-lebel-element email"> Пошта </span>
+        <span class="form-input-container email">
+          <input
+            class="form-input-field email"
+            type="email"
+            name="amail"
+            id=""
+            placeholder=""
+            required
+          />
+          <span class="icon">
+            <svg>
+              <use href="./images/sprite_new.svg#icon-email"></use>
+            </svg>
+          </span>
+        </span>
+      </label>
+      <label>
+        <span class="form-lebel-element coment"> Коментар </span>
+        <span class="form-input-container coment">
+          <textarea class="form-input-field coment" name="coment" id="" placeholder="Введіть текст">
+Тут має бути чийсь коментар але якщо це все очистити то буде вйдно "placeholder"</textarea
+          >
+        </span>
+      </label>
+      <!-- CHECKBOX -->
+      <input
+        class="form-checkbox visually-hidden"
+        type="checkbox"
+        name="privat_polisy"
+        id="privat_polisy"
+        required
+      />
+      <label for="privat_polisy" class="checkbox-pseudo">
+        <span>
+          Погоджуюся з розсилкою та приймаю
+          <a href="">Умови договору</a>
+        </span>
+      </label>
+      <button class="btn-big-blue" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>

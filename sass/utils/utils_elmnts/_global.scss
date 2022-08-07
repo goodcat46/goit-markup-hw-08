@@ -20,12 +20,17 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* -------------------------- ГЛОБАЛЬНІ КЛАСИ -------------------------- */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &.--no-padding {
     padding: 0px;
@@ -98,6 +103,11 @@ body {
     justify-content: start;
   }
   &-sp-btwn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  &-column-center {
     display: flex;
     align-content: center;
     justify-content: center;

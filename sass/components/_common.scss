@@ -1,0 +1,49 @@
+/* СОЦІАЛЬНІ МЕРЕЖІ */
+.socials {
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 206px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    transition: background-color var(--anim-main-timing-function),
+      fill var(--anim-main-timing-function);
+
+    &.social--icon {
+      display: block;
+      width: 20px;
+      // height: 20px;
+    }
+    &.--worker-card {
+      fill: var(--fill-icon-svg);
+      background-color: #ffffff;
+      &:focus,
+      &:hover {
+        background-color: var(--clr-btns-accent);
+        fill: #ffffff;
+      }
+      &.--socials-footer {
+        fill: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+        &:focus,
+        &:hover {
+          background-color: var(--clr-btns-accent);
+        }
+      }
+    }
+  }
+}
