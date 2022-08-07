@@ -1,36 +1,52 @@
-// /* ----------ГЕРОЙ */
-// .hero {
-//   background-color: #c4c4c4;
-//   height: 600px;
-//   max-width: 1600px;
-//   width: 100%;
+/* ----------ГЕРОЙ */
+.hero {
+  background-color: #c4c4c4;
+  height: 400px;
+  width: 100%;
+  max-width: 1600px;
 
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/Img_hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
 
-//   text-align: center;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   /* ТЕКСТ ГЕРОЙ */
-//   &-hero {
-//     font-weight: var(--tittle-wght-bol2);
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: #ffffff;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images_hw8/hero_bckrnd/hero-mobile2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* ТЕКСТ ГЕРОЙ */
+  &__hero-text {
+    font-weight: var(--tittle-wght-bol2);
 
-//     width: 605px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 26px;
+    width: 355px;
 
-//     margin: 0px auto 28px;
-//   }
-// }
+    margin: 0px auto 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+      url(../images_hw8/hero_bckrnd/hero-tablet.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images_hw8/hero_bckrnd/hero-desctop.jpg);
+
+    &__hero-text {
+      font-size: 44px;
+      width: 605px;
+    }
+  }
+}
 // /* ----------ОСОБЛИВОСТІ */
 // .spcls-list {
 //   display: flex;
