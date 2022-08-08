@@ -24,11 +24,19 @@
     <!-- ШАПКА СТОРІНКИ -->
     <!-- Нижня границя шапки згідно макету -->
     <header class="section --header">
-      <div class="container --g-flex">
+      <div class="container --g-flex-center">
         <!-- logo -->
         <a class="logo hdr" href="./index.html">
           <span>Web</span><span class="black">Studio</span>
         </a>
+
+        <!-- бургер мобільного меню -->
+        <button class="btn --burger-menu" type="button">
+          <svg>
+            <use href="./images/sprite_new.svg#burger-btn"></use>
+          </svg>
+        </button>
+
         <!--navigation zone-->
         <nav class="nav-panel">
           <ul class="nav-list">
@@ -43,6 +51,7 @@
             </li>
           </ul>
         </nav>
+
         <!-- contacts -->
         <ul class="contacts">
           <li>
@@ -62,6 +71,41 @@
             </a>
           </li>
         </ul>
+      </div>
+      <!-- МОБІЛЬНЕ МЕНЮ -->
+      <div class="mobile-menu is-hidden">
+        <div class="mobile-menu__container" data-mobile-menu>
+          <button class="btn --close-mobile-menu" type="button" data-mobile-menu-close>
+            <svg>
+              <use href="./images/sprite_new.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link current" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li>
+                <a class="nav-link" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul>
+              <li>+380</li>
+              <li>mail</li>
+            </ul>
+          </address>
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- ОСНОВНА ЧАСТИНА -->

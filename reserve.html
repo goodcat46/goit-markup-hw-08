@@ -1,95 +1,152 @@
-<!-- МОДАЛЬНЕ ВІКНО -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal flex">
-    <button class="button-close" type="button" data-modal-close>
-      <svg>
-        <use href="./images/sprite_new.svg#icon-close"></use>
-      </svg>
-    </button>
-    <span class="form-name"> Залишіть свої дані, ми вам передзвонимо </span>
-    <form class="form">
-      <label>
-        <span class="form-lebel-element --name"> Ім'я </span>
-        <span class="form-input__container --name">
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NORMALIZATION -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <!-- Тут стилі -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- МОДАЛЬНЕ ВІКНО -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal flex">
+        <button class="button-close" type="button" data-modal-close>
+          <svg>
+            <use href="./images/sprite_new.svg#icon-close"></use>
+          </svg>
+        </button>
+        <span class="form-name"> Залишіть свої дані, ми вам передзвонимо </span>
+        <form class="form">
+          <label>
+            <span class="form-lebel-element --name"> Ім'я </span>
+            <span class="form-input__container --name">
+              <input
+                class="form-input__field --name"
+                type="text"
+                name="name"
+                id=""
+                placeholder=""
+                required
+              />
+              <span class="icon">
+                <svg>
+                  <use href="./images/sprite_new.svg#icon-person"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+          <label>
+            <span class="form-lebel-element --phone"> Телефон </span>
+            <span class="form-input__container --phone">
+              <input
+                class="form-input__field --phone"
+                type="tel"
+                name="tel"
+                id=""
+                placeholder=""
+                required
+              />
+              <span class="icon">
+                <svg>
+                  <use href="./images/sprite_new.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+          <label>
+            <span class="form-lebel-element ----email"> Пошта </span>
+            <span class="form-input__container ----email">
+              <input
+                class="form-input__field ----email"
+                type="email"
+                name="amail"
+                id=""
+                placeholder=""
+                required
+              />
+              <span class="icon">
+                <svg>
+                  <use href="./images/sprite_new.svg#icon-email"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+          <label>
+            <span class="form-lebel-element --coment"> Коментар </span>
+            <span class="form-input__container --coment">
+              <textarea
+                class="form-input__field --coment"
+                name="coment"
+                id=""
+                placeholder="Введіть текст"
+              >
+  Тут має бути чийсь коментар але якщо це все очистити то буде вйдно "placeholder"</textarea
+              >
+            </span>
+          </label>
           <input
-            class="form-input__field --name"
-            type="text"
-            name="name"
-            id=""
-            placeholder=""
+            class="form__checkbox visually-hidden"
+            type="checkbox"
+            name="privat_polisy"
+            id="privat_polisy"
             required
           />
-          <span class="icon">
-            <svg>
-              <use href="./images/sprite_new.svg#icon-person"></use>
-            </svg>
-          </span>
-        </span>
-      </label>
-      <label>
-        <span class="form-lebel-element --phone"> Телефон </span>
-        <span class="form-input__container --phone">
-          <input
-            class="form-input__field --phone"
-            type="tel"
-            name="tel"
-            id=""
-            placeholder=""
-            required
-          />
-          <span class="icon">
-            <svg>
-              <use href="./images/sprite_new.svg#icon-phone"></use>
-            </svg>
-          </span>
-        </span>
-      </label>
-      <label>
-        <span class="form-lebel-element ----email"> Пошта </span>
-        <span class="form-input__container ----email">
-          <input
-            class="form-input__field ----email"
-            type="email"
-            name="amail"
-            id=""
-            placeholder=""
-            required
-          />
-          <span class="icon">
-            <svg>
-              <use href="./images/sprite_new.svg#icon-email"></use>
-            </svg>
-          </span>
-        </span>
-      </label>
-      <label>
-        <span class="form-lebel-element --coment"> Коментар </span>
-        <span class="form-input__container --coment">
-          <textarea
-            class="form-input__field --coment"
-            name="coment"
-            id=""
-            placeholder="Введіть текст"
-          >
-Тут має бути чийсь коментар але якщо це все очистити то буде вйдно "placeholder"</textarea
-          >
-        </span>
-      </label>
-      <!-- CHECKBOX -->
-      <input
-        class="form__checkbox visually-hidden"
-        type="checkbox"
-        name="privat_polisy"
-        id="privat_polisy"
-        required
-      />
-      <label for="privat_polisy" class="form__checkbox--pseudo">
-        <span>
-          Погоджуюся з розсилкою та приймаю
-          <a href="">Умови договору</a>
-        </span>
-      </label>
-      <button class="btn --big-blue" type="submit">Відправити</button>
-    </form>
-  </div>
-</div>
+          <label for="privat_polisy" class="form__checkbox--pseudo">
+            <span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a>
+            </span>
+          </label>
+          <button class="btn --big-blue" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <!-- МОБІЛЬНЕ МЕНЮ -->
+    <div class="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu__container">
+        <button class="btn btn__close" type="button" data-mobile-menu-close>
+          <svg>
+            <use href="./images/sprite_new.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a class="nav-link current" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>+380</li>
+            <li>mail</li>
+          </ul>
+        </address>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

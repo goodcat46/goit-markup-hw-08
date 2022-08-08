@@ -96,8 +96,8 @@ body {
   display: flex;
   &-center {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
   }
   &-start {
     display: flex;
@@ -118,6 +118,11 @@ body {
 }
 .--centered {
   margin: 0 auto 0;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 /* -------------------------- НОРМАЛІЗАЦІЯ -------------------------- */
 /* ЗАГОЛОВКИ */

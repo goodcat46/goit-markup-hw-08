@@ -84,4 +84,105 @@
       color: #ffffff;
     }
   }
+  // відкриття мобі меню
+  &.--burger-menu {
+    width: 40px;
+    height: 40px;
+
+    padding: 12px 8px;
+
+    margin-left: auto;
+    background-color: #ffffff;
+    border-style: none;
+    & svg {
+      width: 24px;
+      height: 16px;
+    }
+    &:focus,
+    &:hover {
+      fill: var(--clr-btns-accent);
+    }
+    @media screen and (min-width: 481px) {
+      display: none;
+    }
+  }
+  // закриття модального вікна
+  &.--close-modal {
+    position: absolute;
+    top: 8px;
+    left: 93%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow var(--anim-main-timing-function);
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+    &:focus,
+    &:hover {
+      fill: var(--clr-btns-accent);
+    }
+  }
+  // закриття мобільного меню
+  &.--close-mobile-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 10px;
+
+    background-color: #fff;
+    transition: fill var(--anim-main-timing-function);
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+    &:focus,
+    &:hover {
+      fill: var(--clr-btns-accent);
+    }
+    /* кнопка закриття */
+    // .button-close // modal
+    /*&__close {
+    position: absolute;
+    top: 8px;
+    left: 490px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow var(--anim-main-timing-function);
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+    &:focus,
+    &:hover {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+  }*/
+  }
 }

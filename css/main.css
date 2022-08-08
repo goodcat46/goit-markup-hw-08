@@ -123,8 +123,8 @@ body {
 }
 .--g-flex-center {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .--g-flex-start {
   display: flex;
@@ -145,6 +145,12 @@ body {
 
 .--centered {
   margin: 0 auto 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 /* -------------------------- НОРМАЛІЗАЦІЯ -------------------------- */
@@ -279,7 +285,6 @@ img {
   }
 }
 
-/* СОЦІАЛЬНІ МЕРЕЖІ footer */
 .logo {
   display: block;
   font-family: var(--font-fmly-logo);
@@ -388,6 +393,92 @@ img {
   background-color: var(--clr-btns-accent);
   color: #ffffff;
 }
+.btn.--burger-menu {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-style: none;
+}
+.btn.--burger-menu svg {
+  width: 24px;
+  height: 16px;
+}
+.btn.--burger-menu:focus, .btn.--burger-menu:hover {
+  fill: var(--clr-btns-accent);
+}
+@media screen and (min-width: 481px) {
+  .btn.--burger-menu {
+    display: none;
+  }
+}
+.btn.--close-modal {
+  position: absolute;
+  top: 8px;
+  left: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: box-shadow var(--anim-main-timing-function);
+}
+.btn.--close-modal svg {
+  width: 12px;
+  height: 12px;
+}
+.btn.--close-modal:focus, .btn.--close-modal:hover {
+  fill: var(--clr-btns-accent);
+}
+.btn.--close-mobile-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  transition: fill var(--anim-main-timing-function);
+  /* кнопка закриття */
+  /*&__close {
+    position: absolute;
+    top: 8px;
+    left: 490px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow var(--anim-main-timing-function);
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+    &:focus,
+    &:hover {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+  }*/
+}
+.btn.--close-mobile-menu svg {
+  width: 20px;
+  height: 20px;
+}
+.btn.--close-mobile-menu:focus, .btn.--close-mobile-menu:hover {
+  fill: var(--clr-btns-accent);
+}
 
 /* --------------------------- МОДАЛЬНЕ ВІКНО */
 /* модальне вікно */
@@ -396,25 +487,44 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
+  overflow: auto;
   padding: 40px;
-  height: 580px;
-  width: 528px;
+  width: 96%;
+  max-width: 450px;
+  height: 96%;
+  max-height: 625px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--anim-main-timing-function), visibility var(--anim-main-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 96%;
+    max-width: 528px;
+    height: 96%;
+    max-height: 625px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 96%;
+    max-height: 580px;
+  }
 }
 
 /* кнопка закриття */
 .button-close {
   position: absolute;
   top: 8px;
-  left: 490px;
+  left: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
+  border-style: none;
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -489,6 +599,10 @@ img {
 .form-input__container.--comment {
   height: 120px;
   margin: 4px 0 20px;
+  padding: 12px 16px;
+}
+.form-input__container textarea {
+  resize: none;
 }
 .form-input__container .icon {
   display: flex;
@@ -653,6 +767,49 @@ img {
   }
 }
 
+/* МОБІЛЬНЕ МЕНЮ */
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    outline: 1px solid tomato;
+  }
+  .mobile-menu__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid tomato;
+  }
+  .mobile-menu .btn__close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #fff;
+    transition: fill var(--anim-main-timing-function);
+  }
+  .mobile-menu .btn__close svg {
+    width: 20px;
+    height: 20px;
+  }
+  .mobile-menu .btn__close:focus, .mobile-menu .btn__close:hover {
+    fill: var(--clr-btns-accent);
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 /* ----------ГЕРОЙ */
 .hero {
   background-color: #c4c4c4;
