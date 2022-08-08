@@ -5,7 +5,6 @@
   text-align: center;
   vertical-align: middle;
 
-  border-radius: 4px;
   border: 1px solid transparent;
 
   transition: color var(--anim-main-timing-function), border-color var(--anim-main-timing-function),
@@ -24,7 +23,7 @@
     height: 50px;
 
     padding: 10px 32px;
-
+    border-radius: 4px;
     fill: #ffffff;
     background-color: var(--clr-btns-hover);
     &:focus,
@@ -90,7 +89,7 @@
     height: 40px;
 
     padding: 12px 8px;
-
+    border-radius: 4px;
     margin-left: auto;
     background-color: #ffffff;
     border-style: none;
@@ -102,7 +101,7 @@
     &:hover {
       fill: var(--clr-btns-accent);
     }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -110,7 +109,7 @@
   &.--close-modal {
     position: absolute;
     top: 8px;
-    left: 93%;
+    left: 90%;
 
     display: flex;
     align-items: center;
@@ -124,13 +123,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     transition: box-shadow var(--anim-main-timing-function);
-    & svg {
-      width: 12px;
-      height: 12px;
-    }
     &:focus,
     &:hover {
       fill: var(--clr-btns-accent);
+    }
+    & svg {
+      width: 12px;
+      height: 12px;
     }
   }
   // закриття мобільного меню
@@ -184,5 +183,43 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     }
   }*/
+  }
+  // соціальні кнопки
+  &.--social {
+    display: block;
+    width: 44px;
+    height: 44px;
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+
+    transition: background-color var(--anim-main-timing-function),
+      fill var(--anim-main-timing-function);
+    // соц кнопки футері
+    &.--socials-footer {
+      fill: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      &:focus,
+      &:hover {
+        background-color: var(--clr-btns-accent);
+      }
+    }
+    // соц кнопки у картах працівників
+    &.--worker-card {
+      background-color: #ffffff;
+      fill: var(--fill-icon-svg);
+
+      &:focus,
+      &:hover {
+        background-color: var(--clr-btns-accent);
+        fill: #ffffff;
+      }
+    }
+    & svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
   }
 }

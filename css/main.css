@@ -15,8 +15,7 @@
   --tittle-wght-bold: 700;
   --tittle-wght-bol2: 900;
   --anim-main-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --testing-brdr-clr: tomato;
-  /* --testing-brdr-wght: 1px; */
+  --test-outline: 1px solid tomato;
 }
 
 html {
@@ -100,7 +99,7 @@ body {
 .container {
   padding: 0px 15px;
   margin: 0px auto;
-  outline: 1px solid tomato;
+  /*outline: var(--test-outline);*/
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -271,7 +270,7 @@ img {
 @media screen and (min-width: 768px) {
   .socials {
     margin-top: 0;
-    margin-right: 89px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -329,7 +328,6 @@ img {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  border-radius: 4px;
   border: 1px solid transparent;
   transition: color var(--anim-main-timing-function), border-color var(--anim-main-timing-function), box-shadow var(--anim-main-timing-function), background-color var(--anim-main-timing-function), fill var(--anim-main-timing-function);
 }
@@ -343,6 +341,7 @@ img {
   max-width: fit-content;
   height: 50px;
   padding: 10px 32px;
+  border-radius: 4px;
   fill: #ffffff;
   background-color: var(--clr-btns-hover);
 }
@@ -397,6 +396,7 @@ img {
   width: 40px;
   height: 40px;
   padding: 12px 8px;
+  border-radius: 4px;
   margin-left: auto;
   background-color: #ffffff;
   border-style: none;
@@ -408,7 +408,7 @@ img {
 .btn.--burger-menu:focus, .btn.--burger-menu:hover {
   fill: var(--clr-btns-accent);
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .btn.--burger-menu {
     display: none;
   }
@@ -416,7 +416,7 @@ img {
 .btn.--close-modal {
   position: absolute;
   top: 8px;
-  left: 93%;
+  left: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,12 +427,12 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: box-shadow var(--anim-main-timing-function);
 }
+.btn.--close-modal:focus, .btn.--close-modal:hover {
+  fill: var(--clr-btns-accent);
+}
 .btn.--close-modal svg {
   width: 12px;
   height: 12px;
-}
-.btn.--close-modal:focus, .btn.--close-modal:hover {
-  fill: var(--clr-btns-accent);
 }
 .btn.--close-mobile-menu {
   display: block;
@@ -478,6 +478,35 @@ img {
 }
 .btn.--close-mobile-menu:focus, .btn.--close-mobile-menu:hover {
   fill: var(--clr-btns-accent);
+}
+.btn.--social {
+  display: block;
+  width: 44px;
+  height: 44px;
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color var(--anim-main-timing-function), fill var(--anim-main-timing-function);
+}
+.btn.--social.--socials-footer {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn.--social.--socials-footer:focus, .btn.--social.--socials-footer:hover {
+  background-color: var(--clr-btns-accent);
+}
+.btn.--social.--worker-card {
+  background-color: #ffffff;
+  fill: var(--fill-icon-svg);
+}
+.btn.--social.--worker-card:focus, .btn.--social.--worker-card:hover {
+  background-color: var(--clr-btns-accent);
+  fill: #ffffff;
+}
+.btn.--social svg {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /* --------------------------- МОДАЛЬНЕ ВІКНО */
@@ -1222,7 +1251,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer-contacts {
-    margin: 0 185px 0 76px;
+    margin: 0 auto 76px;
   }
 }
 @media screen and (min-width: 1200px) {
