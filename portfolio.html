@@ -19,14 +19,23 @@
     />
     <!-- Тут стилі -->
     <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body>
     <!--ШАПКА СТОРІНКИ-->
     <header class="section --header">
-      <div class="container --g-flex">
+      <div class="container --g-flex-center">
         <!-- logo -->
         <a class="logo hdr" href="./index.html">
           <span>Web</span><span class="black">Studio</span>
         </a>
+
+        <!-- бургер мобільного меню -->
+        <button class="btn --burger-menu" type="button" data-mobile-menu-open>
+          <svg>
+            <use href="./images/sprite_new.svg#burger-btn"></use>
+          </svg>
+        </button>
+
         <!--navigation zone-->
         <nav class="nav-panel">
           <ul class="nav-list">
@@ -41,6 +50,7 @@
             </li>
           </ul>
         </nav>
+
         <!-- contacts -->
         <ul class="contacts">
           <li>
@@ -60,6 +70,54 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <!-- МОБІЛЬНЕ МЕНЮ -->
+      <div class="mobile-menu is-hidden" data-mobile-menu>
+        <div class="mobile-menu__container">
+          <button class="btn --close-mobile-menu" type="button" data-mobile-menu-close>
+            <svg>
+              <use href="./images/sprite_new.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile">
+            <ul class="nav-mobile__list">
+              <li class="nav-mobile__item">
+                <a class="" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-mobile__item --current">
+                <a class="" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a class="" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts__mobile">
+              <li>
+                <a class="tel-hdr" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li>
+                <a class="mail-hdr" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="socials-mobile__list">
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="">Instagram</a>
+            </li>
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="">Twitter</a>
+            </li>
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="">Facebook</a>
+            </li>
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -380,5 +438,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

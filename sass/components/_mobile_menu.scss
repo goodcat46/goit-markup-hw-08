@@ -13,36 +13,87 @@
 
     background-color: #ffffff;
 
-    outline: 1px solid tomato;
+    /*outline: 1px solid tomato;*/
     &__container {
       position: relative;
       width: 100%;
       height: 100%;
 
-      outline: 1px solid tomato;
+      /*outline: 1px solid tomato;*/
     }
-    & .btn__close {
+    & .mobile-menu__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    & .nav-mobile {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+
+      letter-spacing: 0.02em;
+      margin-bottom: auto;
+      padding: 38px 25px;
+      outline: 1px solid tomato;
+      &__item {
+        &.--current {
+          color: var(--accent-clr-elmnts);
+        }
+        &:not(last-child) {
+          padding-bottom: 32px;
+        }
+      }
+    }
+    & .contacts__mobile {
+    }
+    & .tel-hdr {
       display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      color: var(--accent-clr-elmnts);
 
-      width: 40px;
-      height: 40px;
+      letter-spacing: 0.02em;
 
-      padding: 10px;
+      margin-bottom: 32px;
+    }
+    & .mail-hdr {
+      display: block;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
 
-      background-color: #fff;
-      transition: fill var(--anim-main-timing-function);
-
-      & svg {
-        width: 20px;
-        height: 20px;
+      margin-bottom: 64px;
+    }
+    & .socials-mobile {
+      &__list {
+        display: flex;
+        margin-bottom: 28px;
       }
-      &:focus,
-      &:hover {
-        fill: var(--clr-btns-accent);
+      &__item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-clr-elmnts);
+        padding: 0 10px 0;
+
+        border-right: 1px solid gba(33, 33, 33, 0.2);
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          border-color: transparent;
+        }
       }
+      // &__list:not(:last-child) {
+      //   padding-right: 10px;
+      //   border-right: 1px solid;
+      // }
+      // &__list:not(:first-child) {
+      //   padding-left: 10px;
+      // }
     }
   }
 }
