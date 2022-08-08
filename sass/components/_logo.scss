@@ -1,5 +1,5 @@
 .logo {
-  display: inline-block;
+  display: block;
   font-family: var(--font-fmly-logo);
   font-weight: var(--tittle-wght-bold);
   font-size: 24px;
@@ -14,7 +14,9 @@
     }
   }
   &.ftr {
-    & .white {
+    margin: 0 auto 20px;
+
+    & .--text-white {
       color: #ffffff;
     }
   }
@@ -23,15 +25,15 @@
       padding: 26px 0 26px;
       margin-right: 88px;
     }
+    &.ftr {
+      margin: 0 0 20px;
+    }
   }
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     &.hdr {
       padding: 25px 0 25px;
       margin-right: 93px;
-    }
-    &.ftr {
-      margin-bottom: 20px;
     }
   }
 }

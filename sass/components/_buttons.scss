@@ -3,6 +3,7 @@
   cursor: pointer;
 
   text-align: center;
+  vertical-align: middle;
 
   border-radius: 4px;
   border: 1px solid transparent;
@@ -18,9 +19,13 @@
     letter-spacing: 0.06em;
     color: #ffffff;
 
-    padding: 10px 32px;
     min-width: 200px;
+    max-width: fit-content;
     height: 50px;
+
+    padding: 10px 32px;
+
+    fill: #ffffff;
     background-color: var(--clr-btns-hover);
     &:focus,
     &:hover {
@@ -33,17 +38,21 @@
       color: var(--clr-btns-hover);
       fill: var(--clr-btns-hover);
     }
+    // Кнопка з іконкою
     &.--with-icon {
       display: flex;
       align-items: center;
 
-      fill: #ffffff;
+      padding-right: 28px;
+      padding-left: 28px;
       &:active {
         fill: var(--clr-btns-hover);
       }
     }
-    &.--ftr-margin {
-      margin: 32px 0 0 12px;
+    & .--btn-icon-svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
     }
   }
   // кнопка мала синя
@@ -74,11 +83,5 @@
       background-color: var(--clr-btns-accent);
       color: #ffffff;
     }
-  }
-  // Кнопка з іконкою
-  & .--btn-icon-svg {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
   }
 }

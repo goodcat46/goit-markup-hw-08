@@ -21,17 +21,15 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   <body>
     <!--ШАПКА СТОРІНКИ-->
-    <!-- Нижня границя шапки згідно макету -->
-    <header class="section header">
-      <div class="container test-flex">
+    <header class="section --header">
+      <div class="container --g-flex">
+        <!-- logo -->
+        <a class="logo hdr" href="./index.html">
+          <span>Web</span><span class="black">Studio</span>
+        </a>
         <!--navigation zone-->
-        <nav class="nav-zone test-flex">
-          <!-- logo -->
-          <a class="logo hdr" href="./index.html">
-            <span>Web</span><span class="black">Studio</span>
-          </a>
-          <!-- navigation list -->
-          <ul class="nav-list test-flex">
+        <nav class="nav-panel">
+          <ul class="nav-list">
             <li>
               <a class="nav-link" href="./index.html">Студія</a>
             </li>
@@ -64,6 +62,7 @@
         </ul>
       </div>
     </header>
+
     <!-- ОСНОВНА ЧАСТИНА -->
     <main>
       <section class="section">
@@ -74,27 +73,27 @@
           <div>
             <ul class="filtr-portfolio">
               <li>
-                <button class="btn-little-blue current" type="button">Все</button>
+                <button class="btn --little-blue current" type="button">Все</button>
               </li>
               <li>
-                <button class="btn-little-blue" type="button">Веб-сайти</button>
+                <button class="btn --little-blue" type="button">Веб-сайти</button>
               </li>
               <li>
-                <button class="btn-little-blue" type="button">Додатки</button>
+                <button class="btn --little-blue" type="button">Додатки</button>
               </li>
               <li>
-                <button class="btn-little-blue" type="button">Дизайн</button>
+                <button class="btn --little-blue" type="button">Дизайн</button>
               </li>
               <li>
-                <button class="btn-little-blue" type="button">Маркетинг</button>
+                <button class="btn --little-blue" type="button">Маркетинг</button>
               </li>
             </ul>
           </div>
           <!-- Розкладка робіт -->
           <div>
-            <ul class="portf-list portfolio-flex">
-              <li>
-                <a class="portf-card" href="./">
+            <ul class="portfolio-list portfolio-flex">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img1.jpg" alt="портфоліо-1" width="370" />
@@ -113,8 +112,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img2.jpg" alt="портфоліо-2" width="370" />
@@ -133,8 +132,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img3.jpg" alt="портфоліо-3" width="370" />
@@ -153,8 +152,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img4.jpg" alt="портфоліо-4" width="370" />
@@ -173,8 +172,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img5.jpg" alt="портфоліо-5" width="370" />
@@ -193,8 +192,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img6.jpg" alt="портфоліо-6" width="370" />
@@ -213,8 +212,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img8.jpg" alt="портфоліо-8" width="370" />
@@ -233,8 +232,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img8.jpg" alt="портфоліо-8" width="370" />
@@ -253,8 +252,8 @@
                   </div>
                 </a>
               </li>
-              <li>
-                <a class="portf-card" href="./">
+              <li class="portfolio-list__item">
+                <a class="portfolio-card" href="./">
                   <!-- Зображення портфоліо -->
                   <div class="img-overlay">
                     <img src="./images/portfolio-img/img9.jpg" alt="портфоліо-9" width="370" />
@@ -278,84 +277,107 @@
         </div>
       </section>
     </main>
+
     <!--ПІДВАЛ СТОРІНКИ-->
-    <footer class="section footer">
+    <footer class="section --footer">
       <!-- КОНТАКТИ -->
-      <div class="container flex">
-        <div>
-          <!-- logo footer -->
-          <a class="logo ftr" href="./index.html">
-            <span>Web</span><span class="white">Studio</span>
-          </a>
-    
-          <!-- address and contacts footer -->
-          <address>
-            <ul class="contacts-ftr">
-              <li>
-                <a class="address"
-                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                  target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-              </li>
-              <li>
-                <a class="mail-ftr" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="tel-ftr" href="tel:+380961111111" target="_blank">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-    
-        <!-- СОЦ МЕРЕЖІ -->
-        <div class="socials">
-          <h2 class="socials-tittle">Приєднуйтесь</h2>
-          <ul class="socials-list">
-            <li>
-              <a class="socials-link" href="/">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-instagram-1"></use>
-                </svg>
+      <div class="container">
+        <div class="footer-box-for-desktop">
+          <div class="footer-box-for-tablet">
+            <!--  -->
+            <div class="footer-contacts">
+              <!-- logo footer -->
+              <a class="logo ftr" href="./index.html">
+                <span>Web</span><span class="--text-white">Studio</span>
               </a>
-            </li>
-            <li>
-              <a class="socials-link" href="/">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials-link" href="/">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials-link" href="/">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    
-        <!-- ФОРМА ПІДПИСКИ -->
-        <form class="form-hdr">
-          <div>
-            <label for="xxx">
-              <span class="form-hdr-tittle"> Підпишіться на розсилку </span>
-            </label>
-            <input class="input-email-ftr" type="email" name="email_ftr" id="xxx" placeholder="E-mail" required />
+
+              <!-- address and contacts footer -->
+              <address>
+                <ul class="contacts-footer">
+                  <li class="contacts-footer__item">
+                    <a
+                      class="address"
+                      href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                      target="_blank"
+                      >г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="contacts-footer__item">
+                    <a class="mail-ftr" href="mailto:info@devstudio.com" target="_blank"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="contacts-footer__item">
+                    <a class="tel-ftr" href="tel:+380961111111" target="_blank"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <!-- СОЦ МЕРЕЖІ footer -->
+            <div class="socials">
+              <h2 class="socials__tittle">Приєднуйтесь</h2>
+              <ul class="socials__list">
+                <li>
+                  <a class="socials__link --socials-footer" href="/">
+                    <svg class="socials__icon">
+                      <use href="./images/sprite_new.svg#icon-instagram-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="socials__link --socials-footer" href="/">
+                    <svg class="socials__icon">
+                      <use href="./images/sprite_new.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="socials__link --socials-footer" href="/">
+                    <svg class="socials__icon">
+                      <use href="./images/sprite_new.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="socials__link --socials-footer" href="/">
+                    <svg>
+                      <use
+                        class="socials__icon"
+                        href="./images/sprite_new.svg#icon-linkedin-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button class="btn-big-blue with-icon" type="submit">
-            <span>Підписатись</span>
-            <svg class="icon-svg">
-              <use href="./images/sprite_new.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+
+          <!-- ФОРМА ПІДПИСКИ -->
+          <form class="form-subscribe">
+            <div class="">
+              <label for="xxx">
+                <span class="form-subscribe__tittle"> Підпишіться на розсилку </span>
+              </label>
+              <input
+                class="form-subscribe__input"
+                type="email"
+                name="email_ftr"
+                id="xxx"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <button class="btn --big-blue --with-icon" type="submit">
+              <span>Підписатись</span>
+              <svg class="--btn-icon-svg">
+                <use href="./images/sprite_new.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

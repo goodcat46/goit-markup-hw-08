@@ -20,7 +20,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0px;
+
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 /* -------------------------- ГЛОБАЛЬНІ КЛАСИ -------------------------- */
@@ -109,11 +111,14 @@ body {
   }
   &-column-center {
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
   }
 }
-
+.--centered {
+  margin: 0 auto 0;
+}
 /* -------------------------- НОРМАЛІЗАЦІЯ -------------------------- */
 /* ЗАГОЛОВКИ */
 h1,
