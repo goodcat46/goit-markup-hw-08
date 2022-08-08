@@ -22,44 +22,9 @@
     margin-bottom: 20px;
     text-align: center;
   }
-  &__item {
-    border-radius: 50%;
-  }
-  &__link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    display: block;
-    padding: 12px;
-    border-radius: 50%;
+  transition: background-color var(--anim-main-timing-function),
+    fill var(--anim-main-timing-function);
 
-    transition: background-color var(--anim-main-timing-function),
-      fill var(--anim-main-timing-function);
-    &.--socials-footer {
-      fill: #ffffff;
-      background-color: rgba(255, 255, 255, 0.1);
-
-      &:focus,
-      &:hover {
-        background-color: var(--clr-btns-accent);
-      }
-    }
-    &.--worker-card {
-      background-color: #ffffff;
-      fill: var(--fill-icon-svg);
-
-      &:focus,
-      &:hover {
-        background-color: var(--clr-btns-accent);
-        fill: #ffffff;
-      }
-    }
-    & svg {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-  }
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-right: auto;

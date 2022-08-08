@@ -1,5 +1,5 @@
 /* МОБІЛЬНЕ МЕНЮ */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -46,7 +46,7 @@
     }
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }

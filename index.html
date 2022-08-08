@@ -31,7 +31,7 @@
         </a>
 
         <!-- бургер мобільного меню -->
-        <button class="btn --burger-menu" type="button">
+        <button class="btn --burger-menu" type="button" data-mobile-menu-open>
           <svg>
             <use href="./images/sprite_new.svg#burger-btn"></use>
           </svg>
@@ -72,9 +72,10 @@
           </li>
         </ul>
       </div>
+
       <!-- МОБІЛЬНЕ МЕНЮ -->
-      <div class="mobile-menu is-hidden">
-        <div class="mobile-menu__container" data-mobile-menu>
+      <div class="mobile-menu is-hidden" data-mobile-menu>
+        <div class="mobile-menu__container">
           <button class="btn --close-mobile-menu" type="button" data-mobile-menu-close>
             <svg>
               <use href="./images/sprite_new.svg#icon-close"></use>
@@ -432,28 +433,28 @@
               <h2 class="socials__tittle">Приєднуйтесь</h2>
               <ul class="socials__list">
                 <li>
-                  <a class="socials__link --socials-footer" href="/">
-                    <svg class="socials__icon">
+                  <a class="btn --social --socials-footer" href="/">
+                    <svg>
                       <use href="./images/sprite_new.svg#icon-instagram-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="socials__link --socials-footer" href="/">
-                    <svg class="socials__icon">
+                  <a class="btn --social --socials-footer" href="/">
+                    <svg>
                       <use href="./images/sprite_new.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="socials__link --socials-footer" href="/">
-                    <svg class="socials__icon">
+                  <a class="btn --social --socials-footer" href="/">
+                    <svg>
                       <use href="./images/sprite_new.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="socials__link --socials-footer" href="/">
+                  <a class="btn --social --socials-footer" href="/">
                     <svg>
                       <use
                         class="socials__icon"
@@ -590,5 +591,6 @@
 
     <!-- скрипт модального вікна -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
