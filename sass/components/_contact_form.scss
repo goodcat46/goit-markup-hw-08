@@ -105,9 +105,10 @@
     &--pseudo {
       display: block;
       position: relative;
-      max-width: 83%;
-      margin-bottom: 30px;
 
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: auto;
       cursor: pointer;
 
       & a {

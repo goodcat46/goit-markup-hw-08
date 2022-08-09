@@ -2,18 +2,16 @@
 /* модальне вікно */
 .modal {
   position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  overflow: auto;
-
   padding: 40px;
 
-  // height: 580px;
-  // width: 528px;
-  // max-height: 96%;
-  // max-width: 96%;
   width: 96%;
   max-width: 450px;
   height: 96%;
@@ -27,9 +25,12 @@
 
   transition: transform var(--anim-main-timing-function),
     visibility var(--anim-main-timing-function);
-
+  & .overflow {
+    overflow: auto;
+  }
   @media screen and (min-width: 768px) {
     width: 96%;
+
     max-width: 528px;
     height: 96%;
     max-height: 625px;

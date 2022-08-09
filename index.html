@@ -625,90 +625,92 @@
           </svg>
         </button>
         <span class="form-name"> Залишіть свої дані, ми вам передзвонимо </span>
-        <form class="form">
-          <label>
-            <span class="form-lebel-element --name"> Ім'я </span>
-            <span class="form-input__container --name">
-              <input
-                class="form-input__field --name"
-                type="text"
-                name="name"
-                id=""
-                placeholder=""
-                required
-              />
-              <span class="icon">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-person"></use>
-                </svg>
+        <div class="overflow">
+          <form class="form">
+            <label>
+              <span class="form-lebel-element --name"> Ім'я </span>
+              <span class="form-input__container --name">
+                <input
+                  class="form-input__field --name"
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder=""
+                  required
+                />
+                <span class="icon">
+                  <svg>
+                    <use href="./images/sprite_new.svg#icon-person"></use>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </label>
-          <label>
-            <span class="form-lebel-element --phone"> Телефон </span>
-            <span class="form-input__container --phone">
-              <input
-                class="form-input__field --phone"
-                type="tel"
-                name="tel"
-                id=""
-                placeholder=""
-                required
-              />
-              <span class="icon">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-phone"></use>
-                </svg>
+            </label>
+            <label>
+              <span class="form-lebel-element --phone"> Телефон </span>
+              <span class="form-input__container --phone">
+                <input
+                  class="form-input__field --phone"
+                  type="tel"
+                  name="tel"
+                  id=""
+                  placeholder=""
+                  required
+                />
+                <span class="icon">
+                  <svg>
+                    <use href="./images/sprite_new.svg#icon-phone"></use>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </label>
-          <label>
-            <span class="form-lebel-element --email"> Пошта </span>
-            <span class="form-input__container --email">
-              <input
-                class="form-input__field --email"
-                type="email"
-                name="amail"
-                id=""
-                placeholder=""
-                required
-              />
-              <span class="icon">
-                <svg>
-                  <use href="./images/sprite_new.svg#icon-email"></use>
-                </svg>
+            </label>
+            <label>
+              <span class="form-lebel-element --email"> Пошта </span>
+              <span class="form-input__container --email">
+                <input
+                  class="form-input__field --email"
+                  type="email"
+                  name="amail"
+                  id=""
+                  placeholder=""
+                  required
+                />
+                <span class="icon">
+                  <svg>
+                    <use href="./images/sprite_new.svg#icon-email"></use>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </label>
-          <label>
-            <span class="form-lebel-element --comment"> Коментар </span>
-            <span class="form-input__container --comment">
-              <textarea
-                class="form-input__field --comment"
-                name="coment"
-                id=""
-                placeholder="Введіть текст"
-              >
-Тут має бути чийсь коментар але якщо це все очистити то буде вйдно "placeholder"</textarea
-              >
-            </span>
-          </label>
-          <!-- CHECKBOX -->
-          <input
-            class="form__checkbox visually-hidden"
-            type="checkbox"
-            name="privat_polisy"
-            id="privat_polisy"
-            required
-          />
-          <label for="privat_polisy" class="form__checkbox--pseudo --in-center">
-            <span>
-              Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a>
-            </span>
-          </label>
-          <button class="btn --big-blue --in-center" type="submit">Відправити</button>
-        </form>
+            </label>
+            <label>
+              <span class="form-lebel-element --comment"> Коментар </span>
+              <span class="form-input__container --comment">
+                <textarea
+                  class="form-input__field --comment"
+                  name="coment"
+                  id=""
+                  placeholder="Введіть текст"
+                >
+  Тут має бути чийсь коментар але якщо це все очистити то буде вйдно "placeholder"</textarea
+                >
+              </span>
+            </label>
+            <!-- CHECKBOX -->
+            <input
+              class="form__checkbox visually-hidden"
+              type="checkbox"
+              name="privat_polisy"
+              id="privat_polisy"
+              required
+            />
+            <label for="privat_polisy" class="form__checkbox--pseudo --in-center">
+              <span>
+                Погоджуюся з розсилкою та приймаю
+                <a href="">Умови договору</a>
+              </span>
+            </label>
+            <button class="btn --big-blue --in-center" type="submit">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
 
