@@ -121,7 +121,7 @@
         </div>
       </div>
     </header>
-    
+
     <!-- ОСНОВНА ЧАСТИНА -->
     <main>
       <!-- BANER -->
@@ -173,19 +173,35 @@
           <ul class="works-list test-flex">
             <li class="works-list-item">
               <div class="works-list-img">
-                <img src="./images/studio-imgs/box1.jpg" alt="портфоліо-1" width="370" />
+                <picture>
+                  <source
+                    srcset=".\images_hw8\skills\img.jpg 1x, .\images_hw8\skills\img-2x.jpg 2x"
+                  />
+                  <img src="./images/studio-imgs/box1.jpg" alt="портфоліо-1" width="370" />
+                </picture>
               </div>
               <p class="works-list-text">Десктопні додатки</p>
             </li>
             <li class="works-list-item">
               <div class="works-list-img">
-                <img src="./images/studio-imgs/box2.jpg" alt="портфоліо-2" width="370" />
+                <picture>
+                  <source
+                    srcset=".\images_hw8\skills\box.jpg 1x, .\images_hw8\skills\box-2x.jpg 2x"
+                  />
+
+                  <img src="./images/studio-imgs/box2.jpg" alt="портфоліо-2" width="370" />
+                </picture>
               </div>
               <p class="works-list-text">Мобільні додатки</p>
             </li>
             <li class="works-list-item">
               <div class="works-list-img">
-                <img src="./images/studio-imgs/box3.jpg" alt="портфоліо-3" width="370" />
+                <picture>
+                  <source
+                    srcset=".\images_hw8\skills\tv.jpg 1x, .\images_hw8\skills\tv-2x.jpg 2x"
+                  />
+                </picture>
+                <img src="./images/studio-imgs/box3.jpg" alt="портфоліо-3" />
               </div>
               <p class="works-list-text">Дизайнерські рішення</p>
             </li>
@@ -199,16 +215,39 @@
           <h2 class="section-tittle">Наша команда</h2>
           <ul class="worker-cards-list">
             <li class="worker-card">
-              <img
-                srcset=""
-                src="./images/studio-imgs/img1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <!-- <picture>
+                  <source srcset="" media="(min-width:1200px)" />
+                  <source srcset="" media="(min-width:768px)" />
+                  <source srcset="" media="(max-width:767px)" />
+                </picture> -->
+                <source
+                  srcset="
+                    .\images_hw8\team\desktop-product-designer.jpg    1x,
+                    .\images_hw8\team\desktop-product-designer-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\tablet-product-designer.jpg    1x,
+                    .\images_hw8\team\tablet-product-designer-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\mobile-product-designer.jpg    1x,
+                    .\images_hw8\team\mobile-product-designer-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./images/studio-imgs/img1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="worker-name">Игорь Демьяненко</h3>
               <p class="worker-position">Product Designer</p>
               <!-- СОЦ МЕРЕЖІ -->
-              <ul class="socials__list --centered">
+              <ul class="socials__list --in-center">
                 <li class="socials__item">
                   <a class="btn --social --worker-card" href="/">
                     <svg>
@@ -240,11 +279,35 @@
               </ul>
             </li>
             <li class="worker-card">
-              <img src="./images/studio-imgs/img2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                  .\images_hw8\team\desktop-frontend-developer.jpg 1x,
+                  .\images_hw8\team\desktop-frontend-developer-2x.jpg 2x."
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\tablet-frontend-developer.jpg    1x,
+                    .\images_hw8\team\tablet-frontend-developer-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\mobile-frontend-developer.jpg    1x,
+                    .\images_hw8\team\mobile-frontend-developer-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/studio-imgs/img2.jpg" alt="Ольга Репина" />
+              </picture>
+
               <h3 class="worker-name">Ольга Репина</h3>
               <p class="worker-position">Frontend Developer</p>
               <!-- СОЦ МЕРЕЖІ -->
-              <ul class="socials__list --centered">
+              <ul class="socials__list --in-center">
                 <li>
                   <a class="btn --social --worker-card" href="/">
                     <svg>
@@ -276,11 +339,35 @@
               </ul>
             </li>
             <li class="worker-card">
-              <img src="./images/studio-imgs/img3.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    .\images_hw8\team\desktop-marketing-1.jpg  1x,
+                    .\images_hw8\team\desktop-marketing-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\tablet-marketing.jpg    1x,
+                    .\images_hw8\team\tablet-marketing-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\mobile-marketing.jpg    1x,
+                    .\images_hw8\team\mobile-marketing-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/studio-imgs/img3.jpg" alt="Николай Тарасов" />
+              </picture>
               <h3 class="worker-name">Николай Тарасов</h3>
               <p class="worker-position">Marketing</p>
               <!-- СОЦ МЕРЕЖІ -->
-              <ul class="socials__list --centered">
+              <ul class="socials__list --in-center">
                 <li>
                   <a class="btn --social --worker-card" href="/">
                     <svg>
@@ -312,11 +399,34 @@
               </ul>
             </li>
             <li class="worker-card">
-              <img src="./images/studio-imgs/img4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    .\images_hw8\team\desktop-ui-designer.jpg    1x,
+                    .\images_hw8\team\desktop-ui-designer-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\tablet-ui-designer.jpg    1x,
+                    .\images_hw8\team\tablet-ui-designer-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    .\images_hw8\team\mobile-ui-designer.jpg    1x,
+                    .\images_hw8\team\mobile-ui-designer-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./images/studio-imgs/img4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="worker-name">Михаил Ермаков</h3>
               <p class="worker-position">UI Designer</p>
               <!-- СОЦ МЕРЕЖІ -->
-              <ul class="socials__list --centered">
+              <ul class="socials__list --in-center">
                 <li>
                   <a class="btn --social --worker-card" href="/">
                     <svg>
@@ -591,13 +701,13 @@
             id="privat_polisy"
             required
           />
-          <label for="privat_polisy" class="form__checkbox--pseudo --centered">
+          <label for="privat_polisy" class="form__checkbox--pseudo --in-center">
             <span>
               Погоджуюся з розсилкою та приймаю
               <a href="">Умови договору</a>
             </span>
           </label>
-          <button class="btn --big-blue --centered" type="submit">Відправити</button>
+          <button class="btn --big-blue --in-center" type="submit">Відправити</button>
         </form>
       </div>
     </div>

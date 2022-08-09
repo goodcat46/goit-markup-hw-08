@@ -18,6 +18,7 @@
       position: relative;
       width: 100%;
       height: 100%;
+      padding-left: 25px;
 
       /*outline: 1px solid tomato;*/
     }
@@ -33,8 +34,8 @@
 
       letter-spacing: 0.02em;
       margin-bottom: auto;
-      padding: 38px 25px;
-      outline: 1px solid tomato;
+      padding: 38px 0;
+      /*outline: 1px solid tomato;*/
       &__item {
         &.--current {
           color: var(--accent-clr-elmnts);
@@ -69,6 +70,9 @@
     & .socials-mobile {
       &__list {
         display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+
         margin-bottom: 28px;
       }
       &__item {
@@ -79,7 +83,7 @@
         color: var(--accent-clr-elmnts);
         padding: 0 10px 0;
 
-        border-right: 1px solid gba(33, 33, 33, 0.2);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
         &:first-child {
           padding-left: 0;
         }
