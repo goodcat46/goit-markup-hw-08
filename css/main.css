@@ -345,6 +345,7 @@ img {
   line-height: 1.6;
   padding: 6px 22px;
   margin: 0px;
+  border-radius: 4px;
   background-color: var(--clr-btns-nrml);
 }
 .btn.--little-blue:focus, .btn.--little-blue:hover {
