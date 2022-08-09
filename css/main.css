@@ -931,6 +931,18 @@ img {
     width: 270px;
   }
 }
+.specials-list__item--icon-antena::before {
+  background-image: url(../icons/icons-studio/icons-specials/antenna.svg);
+}
+.specials-list__item--icon-clock::before {
+  background-image: url(../icons/icons-studio/icons-specials/clock.svg);
+}
+.specials-list__item--icon-diagram::before {
+  background-image: url(../icons/icons-studio/icons-specials/diagram.svg);
+}
+.specials-list__item--icon-astronaut::before {
+  background-image: url(../icons/icons-studio/icons-specials/astronaut.svg);
+}
 .specials-list__tittles {
   font-weight: var(--tittle-wght-bold);
   font-size: 14px;
@@ -959,19 +971,6 @@ img {
   .specials-list__text {
     text-align: start;
   }
-}
-
-.--icon-antena::before {
-  background-image: url(../icons/icons-studio/icons-specials/antenna.svg);
-}
-.--icon-clock::before {
-  background-image: url(../icons/icons-studio/icons-specials/clock.svg);
-}
-.--icon-diagram::before {
-  background-image: url(../icons/icons-studio/icons-specials/diagram.svg);
-}
-.--icon-astronaut::before {
-  background-image: url(../icons/icons-studio/icons-specials/astronaut.svg);
 }
 
 /* ---------- works list */
