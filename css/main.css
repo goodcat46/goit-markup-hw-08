@@ -1148,7 +1148,7 @@ img {
   }
 }
 
-.portf-card {
+.portfolio-card {
   position: relative;
   display: block;
   width: 100%;
@@ -1156,10 +1156,10 @@ img {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portf-card:focus, .portf-card:focus-within, .portf-card:hover {
+.portfolio-card:focus, .portfolio-card:focus-within, .portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portf-card:focus .img-overlay-text, .portf-card:focus-within .img-overlay-text, .portf-card:hover .img-overlay-text {
+.portfolio-card:focus .img-overlay-text, .portfolio-card:focus-within .img-overlay-text, .portfolio-card:hover .img-overlay-text {
   transform: translateY(0);
 }
 
