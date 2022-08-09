@@ -841,8 +841,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images_hw8/hero_bckrnd/hero-mobile2x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images_hw8/hero_bckrnd/hero-mobile.jpg);
   /* ТЕКСТ ГЕРОЙ */
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images_hw8/hero_bckrnd/hero-tablet2x.jpg);
+  }
 }
 .hero__hero-text {
   font-weight: var(--tittle-wght-bol2);
@@ -855,10 +861,16 @@ img {
   max-width: 355px;
   margin: 0px auto 28px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images_hw8/hero_bckrnd/hero-tablet.jpg);
+  }
+}
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images_hw8/hero_bckrnd/hero-desctop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images_hw8/hero_bckrnd/hero-tablet2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -867,8 +879,16 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images_hw8/hero_bckrnd/img_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images_hw8/hero_bckrnd/hero-desctop.jpg);
   }
+}
+@media screen and (min-width: 1200px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images_hw8/hero_bckrnd/hero-desctop2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero__hero-text {
     font-size: 44px;
     max-width: 605px;

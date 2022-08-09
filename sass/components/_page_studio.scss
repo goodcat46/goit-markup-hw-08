@@ -16,7 +16,14 @@
   background-size: cover;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images_hw8/hero_bckrnd/hero-mobile2x.jpg);
+    url(../images_hw8/hero_bckrnd/hero-mobile.jpg);
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+      url(../images_hw8/hero_bckrnd/hero-tablet2x.jpg);
+  }
   /* ТЕКСТ ГЕРОЙ */
   &__hero-text {
     font-weight: var(--tittle-wght-bol2);
@@ -32,12 +39,17 @@
     margin: 0px auto 28px;
   }
 
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+      url(../images_hw8/hero_bckrnd/hero-tablet.jpg);
+  }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
-      url(../images_hw8/hero_bckrnd/hero-desctop.jpg);
+      url(../images_hw8/hero_bckrnd/hero-tablet2x.jpg);
   }
   // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   // }
@@ -47,8 +59,14 @@
     padding-bottom: 200px;
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images_hw8/hero_bckrnd/img_hero.jpg);
-
+      url(../images_hw8/hero_bckrnd/hero-desctop.jpg);
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: cover;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+        url(../images_hw8/hero_bckrnd/hero-desctop2x.jpg);
+    }
     &__hero-text {
       font-size: 44px;
       max-width: 605px;
