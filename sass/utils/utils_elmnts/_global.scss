@@ -79,19 +79,19 @@ body {
 }
 .container {
   padding: 0px 15px;
-  margin: 0px auto;
 
   /*outline: var(--test-outline);*/
 
   @media screen and (min-width: 480px) {
-    max-width: 768px;
+    max-width: 480px;
+    margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1200px;
-  // }
 }
 .--g-flex {
   display: flex;
@@ -170,7 +170,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+picture {
+  // max-width: 100%;
+}
 /* СКРИТІ ЕЛЕМЕНТИ */
 .visually-hidden {
   position: absolute;
