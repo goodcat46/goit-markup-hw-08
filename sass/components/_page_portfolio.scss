@@ -17,11 +17,6 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-}
-
-/* РОЗКЛАДКА РОБІТ */
-/* --- карти портфоліо --- */
-.portfolio {
   &__list-item {
     display: block;
     width: 100%;
@@ -60,10 +55,7 @@
       border-left: 1px solid #eeeeee;
       border-bottom: 1px solid #eeeeee;
 
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 17px;
 
       background-color: #ffffff;
     }

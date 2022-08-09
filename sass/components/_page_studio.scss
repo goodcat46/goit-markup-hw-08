@@ -99,6 +99,7 @@
 
       margin-bottom: 30px;
     }
+
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px) / 2);
     }
@@ -156,13 +157,13 @@
   justify-content: center;
   gap: 30px;
 
-  &-item {
+  &__item {
     position: relative;
   }
-  &-img {
+  &__img {
     width: 100%;
   }
-  &-text {
+  &__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,7 +205,7 @@
 }
 /* --------- КАРТА ПРАЦІВНИКА */
 // ======================!!!!!!!!!!!!
-.worker-card {
+.worker__card {
   display: block;
   background-color: #fff;
 
@@ -215,7 +216,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  & .worker-name {
+  & .worker__name {
     font-weight: var(--text-wght-nrml2);
     font-size: 16px;
     line-height: 1.2;
@@ -227,7 +228,7 @@
     margin-top: 30px;
     padding-bottom: 10px;
   }
-  & .worker-position {
+  & .worker__position {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -244,16 +245,29 @@
   }
 }
 /* ---------- ПОСТІЙНІ КЛІЄНТИ */
-.partner-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-
-  &__item {
-    width: calc((100% - 30px) / 2);
-    min-height: 92px;
+.partner {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__item {
+      width: calc((100% - 30px) / 2);
+      min-height: 92px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      &__item {
+        width: calc((100% - 60px) / 3);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      &__item {
+        width: 170px;
+      }
+    }
   }
-  & .partner-link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,21 +285,9 @@
       border-color: var(--accent-clr-elmnts);
       fill: var(--accent-clr-elmnts);
     }
-    &__icon {
-      width: 106px;
-      height: 60px;
-    }
   }
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    &__item {
-      width: calc((100% - 60px) / 3);
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
-    &__item {
-      width: 170px;
-    }
+  &__icon {
+    width: 106px;
+    height: 60px;
   }
 }
